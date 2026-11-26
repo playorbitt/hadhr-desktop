@@ -1,0 +1,19 @@
+[package]
+name = "hadhr"
+version = "1.0.0"
+description = "Hadhr — read the Quran and follow the recitation word by word (Al-Hadr and Para, offline)"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+axum = "0.8"
+tower-http = { version = "0.6", features = ["fs"] }
+tokio = { version = "1", features = ["rt-multi-thread", "net", "macros"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

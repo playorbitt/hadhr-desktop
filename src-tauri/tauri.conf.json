@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Hadhr",
+  "version": "1.0.0",
+  "identifier": "app.hadhr.quran",
+  "build": {
+    "frontendDist": "../web"
+  },
+  "app": {
+    "windows": [],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "publisher": "playorbitt",
+    "shortDescription": "Read the Quran and follow the recitation word by word",
+    "longDescription": "The QUSX reader with Al-Hadr (30 juz) and the Para recitation (30 para) bundled for offline listening, word-by-word highlighting, repeat, loop and sleep timer.",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.ico"],
+    "resources": {
+      "../web/": "web/",
+      "../mirror/": "mirror/",
+      "../../alhadr-m4a/": "audio/alhadr/",
+      "../../qusx/local_para/audio/": "audio/para/"
+    },
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser"
+      }
+    }
+  }
+}

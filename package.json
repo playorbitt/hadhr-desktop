@@ -1,0 +1,13 @@
+{
+  "name": "hadhr-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "web": "python build_web.py",
+    "dev": "python build_web.py && tauri dev",
+    "build": "python build_web.py && tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}

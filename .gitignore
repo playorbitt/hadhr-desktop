@@ -1,0 +1,8 @@
+# Generated or downloaded — rebuilt by the scripts, never committed
+/web/
+/mirror/
+/node_modules/
+/src-tauri/target/
+/src-tauri/gen/
+*.part
+progress.html
