@@ -1,7 +1,7 @@
 {
   "name": "hadhr-desktop",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "web": "python build_web.py",
     "dev": "python build_web.py && tauri dev",

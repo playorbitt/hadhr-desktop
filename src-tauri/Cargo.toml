@@ -1,6 +1,6 @@
 [package]
 name = "hadhr"
-version = "1.0.0"
+version = "1.0.1"
 description = "Hadhr — read the Quran and follow the recitation word by word (Al-Hadr and Para, offline)"
 edition = "2021"
 
